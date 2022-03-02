@@ -17,11 +17,7 @@ Prelude> prettyJsonFile "input.json"
       "g": "h",
       "i": "j",
       "k": {
-        "l": [
-          "m",
-          "n",
-          "o"
-        ]
+        "l": ["m","n","o"]
       }
     }
   }

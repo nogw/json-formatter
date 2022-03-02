@@ -23,7 +23,8 @@ prettyJson js =
     JsonString s -> quote s
     JsonBool b -> (if b then "true" else "false")
     JsonList [] -> "[]"
-    JsonList l -> printf "[\n%s\n]" $ indent $ joinComma $ map prettyJson l
+    JsonList l -> printf "[%s]" $ List.intercalate "," $ map prettyJson l
     JsonObject kv -> printf "{\n%s\n}" $ indent $ joinComma $ map pairToStr (toList kv)
      where
       pairToStr (key, val) = printf "%s: %s" (quote key) (prettyJson val)
+    -- JsonList l -> printf "[\n%s\n]" $ indent $ joinComma $ map prettyJson l
