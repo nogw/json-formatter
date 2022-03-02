@@ -2,7 +2,7 @@ module Utils where
 
 import Data (Json (JsonObject))
 import qualified Data.Map as M
-import Format (prettyJson)
+import Pretty (prettyJson)
 import Lib (run)
 import System.IO
 

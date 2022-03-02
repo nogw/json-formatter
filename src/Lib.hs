@@ -4,7 +4,7 @@ import Data (Json (..))
 import Data.Char
 import qualified Data.Functor.Identity
 import Data.Map (Map, fromList)
-import Format (prettyJson)
+import Pretty (prettyJson)
 import Text.Parsec
 import Text.Parsec.Error
 

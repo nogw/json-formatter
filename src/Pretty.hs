@@ -1,4 +1,4 @@
-module Format where
+module Pretty where
 
 import Data (Json (..))
 import Data.List as List ( intercalate )
