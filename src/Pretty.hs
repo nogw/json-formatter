@@ -9,7 +9,7 @@ quote :: String -> String
 quote = printf "\"%s\""
 
 indent :: String -> String
-indent = List.intercalate "\n" . map ('\t' :) . lines
+indent = List.intercalate "\n" . map ("  " <>) . lines
 
 joinComma :: [String] -> String
 joinComma = List.intercalate ",\n"
